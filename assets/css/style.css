@@ -11,6 +11,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  background-color: #f3f3f3;
 }
 
 a {
@@ -22,10 +23,18 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Raleway", sans-serif;
 }
 
+/* colors
+#3ac162 */
+/* font-family: "Open Sans", sans-serif; */
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -130,11 +139,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: "Abril Fatface", sans-serif;
 }
 
 #header .logo a {
-  color: #5fcf80;
+  color: #bb7e5d;
 }
 
 #header .logo img {
@@ -173,11 +182,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #37423b;
   transition: 0.3s;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 500;
 }
 
-.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+.nav-menu a:hover,
+.nav-menu .active > a,
+.nav-menu li:hover > a {
   color: #5fcf80;
 }
 
@@ -215,7 +226,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #37423b;
 }
 
-.nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
+.nav-menu .drop-down ul a:hover,
+.nav-menu .drop-down ul .active > a,
+.nav-menu .drop-down ul li:hover > a {
   color: #5fcf80;
 }
 
@@ -335,7 +348,9 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
 }
 
-.mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
+.mobile-nav a:hover,
+.mobile-nav .active > a,
+.mobile-nav li:hover > a {
   color: #5fcf80;
   text-decoration: none;
 }
@@ -397,7 +412,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 80vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/wgimg/home/background.JPG") top center;
   background-size: cover;
   position: relative;
 }
@@ -428,7 +443,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 56px;
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: "Abril Fatface", sans-serif;
 }
 
 #hero h2 {
@@ -479,6 +494,9 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
+/* .img-fluid.home {
+  border-radius: 50%;
+} */
 section {
   padding: 60px 0;
   overflow: hidden;
@@ -501,7 +519,7 @@ section {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #aaaaaa;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .section-title h2::after {
@@ -519,7 +537,7 @@ section {
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: "Abril Fatface", sans-serif;
   color: #37423b;
 }
 
@@ -550,6 +568,15 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.img-wrap {
+  width: 100%;
+}
+.img-wrap img {
+  width: 100%;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #999999;
+}
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
@@ -725,6 +752,58 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Native Plants Home page
+--------------------------------------------------------------*/
+.img-fluid.home {
+  border-radius: 50%;
+}
+div.landscaping.content-wrap {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.landscaping.list-items {
+  margin: 0 30%;
+}
+.container.landscaping {
+  text-align: left;
+}
+
+.homerow {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.homecolumn {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.homecolumn img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/*--------------------------------------------------------------
 # Courses
 --------------------------------------------------------------*/
 .courses .course-item {
@@ -885,7 +964,8 @@ section {
   margin: 0;
 }
 
-.testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
   color: #c1ecce;
   font-size: 26px;
 }
@@ -908,7 +988,8 @@ section {
   margin: 15px auto 15px auto;
 }
 
-.testimonials .owl-nav, .testimonials .owl-dots {
+.testimonials .owl-nav,
+.testimonials .owl-dots {
   margin-top: 5px;
   text-align: center;
 }
@@ -952,7 +1033,7 @@ section {
 }
 
 .course-details h3:before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 100%;
@@ -963,7 +1044,7 @@ section {
 }
 
 .course-details h3:after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 60px;
@@ -1281,11 +1362,14 @@ section {
   color: #657a6d;
 }
 
-.contact .info .email, .contact .info .phone {
+.contact .info .email,
+.contact .info .phone {
   margin-top: 40px;
 }
 
-.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
   background: #5fcf80;
   color: #fff;
 }
@@ -1349,13 +1433,15 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input, .contact .php-email-form textarea {
+.contact .php-email-form input,
+.contact .php-email-form textarea {
   border-radius: 4px;
   box-shadow: none;
   font-size: 14px;
 }
 
-.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
   border-color: #5fcf80;
 }
 
