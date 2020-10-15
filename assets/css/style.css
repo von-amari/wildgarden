@@ -571,6 +571,10 @@ section {
 /* .img-wrap {
   width: 100%;
 } */
+
+.iframe {
+ text-align: center;
+}
 .img-wrap img {
   width: 70%;
   padding: 10px;
