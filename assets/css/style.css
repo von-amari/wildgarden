@@ -573,7 +573,7 @@ section {
 } */
 
 .iframe {
- text-align: center;
+  text-align: center;
 }
 .img-wrap img {
   width: 70%;
@@ -878,6 +878,12 @@ div.landscaping.content-wrap {
 /*--------------------------------------------------------------
 # Trainers
 --------------------------------------------------------------*/
+.fa-leaf {
+  color: #c27933;
+}
+.landscaping_list ul {
+  list-style-type: none;
+}
 .trainers .member {
   text-align: center;
   margin-bottom: 20px;
