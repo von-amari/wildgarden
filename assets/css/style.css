@@ -947,6 +947,29 @@ div.landscaping.content-wrap {
   margin: 0 2px;
 }
 
+.trainers .content .learn-more-btn {
+  background: #c27933;
+  color: #fff;
+  border-radius: 50px;
+  padding: 8px 25px 9px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.trainers .content .learn-more-btn:hover {
+  background: #d79f69;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .trainers .content .learn-more-btn {
+    margin: 0 48px 0 0;
+    padding: 6px 18px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
@@ -987,7 +1010,7 @@ div.landscaping.content-wrap {
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: #c1ecce;
+  color: #c08e5f;
   font-size: 26px;
 }
 
@@ -1351,7 +1374,7 @@ div.landscaping.content-wrap {
 
 .contact .info {
   width: 100%;
-  background: #fff;
+  background: #f3f3f3;
 }
 
 .contact .info i {
@@ -1360,7 +1383,7 @@ div.landscaping.content-wrap {
   float: left;
   width: 44px;
   height: 44px;
-  background: #ecf9f0;
+  background: #f3f3f3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1392,12 +1415,12 @@ div.landscaping.content-wrap {
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
   background: #c27933;
-  color: #fff;
+  color: #f3f3f3;
 }
 
 .contact .php-email-form {
   width: 100%;
-  background: #fff;
+  background: #f3f3f3;
 }
 
 .contact .php-email-form .form-group {
@@ -1414,7 +1437,7 @@ div.landscaping.content-wrap {
 
 .contact .php-email-form .error-message {
   display: none;
-  color: #fff;
+  color: #f3f3f3;
   background: #ed3c0d;
   text-align: left;
   padding: 15px;
@@ -1427,8 +1450,8 @@ div.landscaping.content-wrap {
 
 .contact .php-email-form .sent-message {
   display: none;
-  color: #fff;
-  background: #18d26e;
+  color: #f3f3f3;
+  background: #c27933;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1436,7 +1459,7 @@ div.landscaping.content-wrap {
 
 .contact .php-email-form .loading {
   display: none;
-  background: #fff;
+  background: #f3f3f3;
   text-align: center;
   padding: 15px;
 }
@@ -1448,7 +1471,7 @@ div.landscaping.content-wrap {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid #c27933;
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
@@ -1478,7 +1501,7 @@ div.landscaping.content-wrap {
   background: #c27933;
   border: 0;
   padding: 10px 35px;
-  color: #fff;
+  color: #f3f3f3;
   transition: 0.4s;
   border-radius: 50px;
 }
