@@ -497,6 +497,14 @@ h6 {
 /* .img-fluid.home {
   border-radius: 50%;
 } */
+
+@media (min-width: 900px) {
+  .img-fluid.home {
+    margin-top: -20%;
+    margin-left: 20%;
+  }
+}
+
 section {
   padding: 60px 0;
   overflow: hidden;
