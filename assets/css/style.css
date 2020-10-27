@@ -1241,8 +1241,9 @@ div.landscaping.content-wrap {
 .padding {
   padding-left: 2cm;
 }
-.padding2 {
-  padding-left: 50%;
+.ex1 {
+  padding-right: 20%;
+}
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
