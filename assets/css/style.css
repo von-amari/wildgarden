@@ -409,23 +409,169 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero {
+/* #hero {
   width: 100%;
   height: 80vh;
   background: url("../img/wgimg/home/background.JPG") top center;
   background-size: cover;
   position: relative;
+} */
+
+.img-fluid.slide {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  margin: 0% auto;
+  z-index: -1;
 }
 
-#hero:before {
-  content: "";
-  background: rgba(0, 0, 0, 0.4);
+#hero .carousel-item {
+  width: 100%;
+  height: 80vh;
+  background: top center;
+  background-size: cover;
+  background-position: relative;
+  background-repeat: no-repeat;
+}
+
+#hero .carousel-item::before {
+  content: '';
+  background-color: rgba(12, 11, 10, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#hero .carousel-container {
+  padding-top: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
+  background-repeat: no-repeat;
 }
+
+#hero .carousel-content {
+  text-align: center;
+}
+
+#hero h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#hero h2 span {
+  color: #c27933;
+}
+
+#hero p {
+  width: 80%;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+  margin: 0 auto 30px auto;
+  color: #fff;
+}
+
+#hero .carousel-inner .carousel-item {
+  transition-property: opacity;
+  background-position: center top;
+}
+
+#hero .carousel-inner .carousel-item,
+#hero .carousel-inner .active.carousel-item-left,
+#hero .carousel-inner .active.carousel-item-right {
+  opacity: 0;
+}
+
+#hero .carousel-inner .active,
+#hero .carousel-inner .carousel-item-next.carousel-item-left,
+#hero .carousel-inner .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#hero .carousel-inner .carousel-item-next,
+#hero .carousel-inner .carousel-item-prev,
+#hero .carousel-inner .active.carousel-item-left,
+#hero .carousel-inner .active.carousel-item-right {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+
+#hero .carousel-control-prev, #hero .carousel-control-next {
+  width: 10%;
+  opacity: 1;
+}
+
+#hero .carousel-control-next-icon, #hero .carousel-control-prev-icon {
+  background: none;
+  font-size: 36px;
+  line-height: 1;
+  width: auto;
+  height: auto;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  padding: 10px;
+  transition: 0.3s;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#hero .carousel-control-next-icon:hover, #hero .carousel-control-prev-icon:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#hero .carousel-indicators li {
+  cursor: pointer;
+}
+
+#hero .btn-menu, #hero .btn-book {
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 0 10px;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  color: #fff;
+  border: 2px solid #c27933;
+}
+
+#hero .btn-menu:hover, #hero .btn-book:hover {
+  background: #c27933;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #hero h2 {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #hero p {
+    width: 50%;
+  }
+  #hero .carousel-control-prev, #hero .carousel-control-next {
+    width: 5%;
+  }
+}
+
+/* end carousel */
 
 #hero .container {
   padding-top: 72px;
@@ -497,6 +643,14 @@ h6 {
 /* .img-fluid.home {
   border-radius: 50%;
 } */
+
+@media (min-width: 900px) {
+  .img-fluid.home {
+    margin-top: -20%;
+    margin-left: 20%;
+  }
+}
+
 section {
   padding: 60px 0;
   overflow: hidden;
@@ -573,7 +727,7 @@ section {
 } */
 
 .iframe {
- text-align: center;
+  text-align: center;
 }
 .img-wrap img {
   width: 70%;
@@ -808,37 +962,37 @@ div.landscaping.content-wrap {
   }
 }
 /*--------------------------------------------------------------
-# Services
+# Courses
 --------------------------------------------------------------*/
-.services .services-item {
+.courses .course-item {
   border-radius: 5px;
   border: 1px solid #eef0ef;
 }
 
-.services .services-content {
+.courses .course-content {
   padding: 15px;
 }
 
-.services .services-content h3 {
+.courses .course-content h3 {
   font-weight: 700;
   font-size: 20px;
 }
 
-.services .services-content h3 a {
+.courses .course-content h3 a {
   color: #897264;
   transition: 0.3s;
 }
 
-.services .services-content h3 a:hover {
+.courses .course-content h3 a:hover {
   color: #c27933;
 }
 
-.services .services-content p {
+.courses .course-content p {
   font-size: 14px;
   color: #777777;
 }
 
-.services .services-content h4 {
+.courses .course-content h4 {
   font-size: 14px;
   background: #c27933;
   padding: 7px 14px;
@@ -846,7 +1000,7 @@ div.landscaping.content-wrap {
   margin: 0;
 }
 
-.services .services-content .price {
+.courses .course-content .price {
   margin: 0;
   font-weight: 700;
   font-size: 18px;
@@ -876,8 +1030,25 @@ div.landscaping.content-wrap {
 }
 
 /*--------------------------------------------------------------
-# Trainers
+# Trainers and Landscaping
 --------------------------------------------------------------*/
+.fa-leaf {
+  color: #c27933;
+}
+.landscaping_list ul {
+  list-style-type: none;
+}
+.landscaping.content-wrap {
+  text-align: center;
+}
+.left {
+  float: left;
+  margin-top: -31%;
+}
+.right {
+  margin-top: 15%;
+  float: right;
+}
 .trainers .member {
   text-align: center;
   margin-bottom: 20px;
@@ -930,6 +1101,29 @@ div.landscaping.content-wrap {
   margin: 0 2px;
 }
 
+.trainers .content .learn-more-btn {
+  background: #c27933;
+  color: #fff;
+  border-radius: 50px;
+  padding: 8px 25px 9px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.trainers .content .learn-more-btn:hover {
+  background: #d79f69;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .trainers .content .learn-more-btn {
+    margin: 0 48px 0 0;
+    padding: 6px 18px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
@@ -970,7 +1164,7 @@ div.landscaping.content-wrap {
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: #c1ecce;
+  color: #c08e5f;
   font-size: 26px;
 }
 
@@ -1214,14 +1408,7 @@ div.landscaping.content-wrap {
 .events .card:hover .card-body .card-title a {
   color: #c27933;
 }
-/*--------------------------------------------------------------
-# Privacy Policy
---------------------------------------------------------------*/
-.padding {
-  padding-left: 2cm;
-}
-.padding2 {
-  padding-left: 50%;
+
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
@@ -1341,7 +1528,7 @@ div.landscaping.content-wrap {
 
 .contact .info {
   width: 100%;
-  background: #fff;
+  background: #f3f3f3;
 }
 
 .contact .info i {
@@ -1350,7 +1537,7 @@ div.landscaping.content-wrap {
   float: left;
   width: 44px;
   height: 44px;
-  background: #ecf9f0;
+  background: #f3f3f3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1382,12 +1569,12 @@ div.landscaping.content-wrap {
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
   background: #c27933;
-  color: #fff;
+  color: #f3f3f3;
 }
 
 .contact .php-email-form {
   width: 100%;
-  background: #fff;
+  background: #f3f3f3;
 }
 
 .contact .php-email-form .form-group {
@@ -1404,7 +1591,7 @@ div.landscaping.content-wrap {
 
 .contact .php-email-form .error-message {
   display: none;
-  color: #fff;
+  color: #f3f3f3;
   background: #ed3c0d;
   text-align: left;
   padding: 15px;
@@ -1417,8 +1604,8 @@ div.landscaping.content-wrap {
 
 .contact .php-email-form .sent-message {
   display: none;
-  color: #fff;
-  background: #18d26e;
+  color: #f3f3f3;
+  background: #c27933;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1426,7 +1613,7 @@ div.landscaping.content-wrap {
 
 .contact .php-email-form .loading {
   display: none;
-  background: #fff;
+  background: #f3f3f3;
   text-align: center;
   padding: 15px;
 }
@@ -1438,7 +1625,7 @@ div.landscaping.content-wrap {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid #c27933;
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
@@ -1468,7 +1655,7 @@ div.landscaping.content-wrap {
   background: #c27933;
   border: 0;
   padding: 10px 35px;
-  color: #fff;
+  color: #f3f3f3;
   transition: 0.4s;
   border-radius: 50px;
 }
