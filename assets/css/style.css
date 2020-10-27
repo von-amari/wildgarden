@@ -415,6 +415,27 @@ h6 {
   background: url("../img/wgimg/home/background.JPG") top center;
   background-size: cover;
   position: relative;
+<<<<<<< HEAD
+=======
+} */
+
+.img-fluid.slide {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  margin: 0% auto;
+  z-index: -1;
+}
+
+#hero .carousel-item {
+  width: 100%;
+  height: 80vh;
+  background: top center;
+  background-size: cover;
+  background-position: relative;
+  background-repeat: no-repeat;
+>>>>>>> 23dc9f048dd1bffcfc09ebb39a24e3afcf0dc60b
 }
 
 #hero:before {
