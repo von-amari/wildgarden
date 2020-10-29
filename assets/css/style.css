@@ -769,11 +769,7 @@ section {
   white-space: nowrap;
   transition: 0.3s;
   font-size: 14px;
-  margin: 0 auto;
-  text-align: center;
-  display: block;
-  width: 13%;
-
+  display: inline-block;
 }
 
 .about .content .learn-more-btn:hover {
@@ -1119,7 +1115,10 @@ div.landscaping.content-wrap {
   white-space: nowrap;
   transition: 0.3s;
   font-size: 14px;
-  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  width: 13%;
 }
 
 .trainers .content .learn-more-btn:hover {
