@@ -133,6 +133,7 @@
                         $name = htmlspecialchars(stripslashes(trim($_POST['name'])));
                         $subject = htmlspecialchars(stripslashes(trim($_POST['subject'])));
                         $email = htmlspecialchars(stripslashes(trim($_POST['email'])));
+                        $headers = htmlspecialchars(stripslashes(trim($_POST['email'])));
                         $message = htmlspecialchars(stripslashes(trim($_POST['message'])));
                         if (!preg_match("/^[A-Za-z .'-]+$/", $name)) {
                             $name_error = 'Invalid name';
@@ -189,7 +190,8 @@
                             if (isset($_POST['submit']) && !isset($name_error) && !isset($subject_error) && !isset($email_error) && !isset($message_error)) {
                                 $to = 'vonking1980@gmail.com'; // edit here
                                 $body = " Name: $name\n E-mail: $email\n Message:\n $message";
-                                if (mail($to, $subject, $body)) {
+                                $headers = "From: " . $email;
+                                if (mail($to, $subject, $body, $headers)) {
                                     echo '<p style="color: green">Message sent</p>';
                                 } else {
                                     echo '<p>Error occurred, please try again later</p>';
