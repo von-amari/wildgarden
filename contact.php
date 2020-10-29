@@ -155,23 +155,23 @@
 
                             <div class="form-row">
                                 <div class="col-md-6 form-group">
-                                    <label for="name">Name:</label><br>
-                                    <input type="text" name="name" class="form-control">
+
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
                                     <p><?php if (isset($name_error)) echo $name_error; ?></p>
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <label for="email">Email:</label><br>
-                                    <input type="text" name="email" class="form-control">
+
+                                    <input type="text" name="email" class="form-control" placeholder="Your Email">
                                     <p><?php if (isset($email_error)) echo $email_error; ?></p>
 
                                 </div>
                             </div>
-                            <label for="subject">Subject:</label><br>
-                            <input type="text" name="subject" class="form-control">
+
+                            <input type="text" name="subject" class="form-control" placeholder="Subject">
                             <p><?php if (isset($subject_error)) echo $subject_error; ?></p>
 
-                            <label for="message">Message:</label><br>
-                            <textarea name="message" class="form-control" name="message" rows="5"></textarea>
+
+                            <textarea name="message" class="form-control" name="message" rows="5" placeholder="Message"></textarea>
                             <p><?php if (isset($message_error)) echo $message_error; ?></p>
 
 

@@ -773,7 +773,6 @@ section {
   text-align: center;
   display: block;
   width: 13%;
-
 }
 
 .about .content .learn-more-btn:hover {
@@ -1533,7 +1532,7 @@ div.landscaping.content-wrap {
 # Contact
 --------------------------------------------------------------*/
 .contact {
-  padding-top: 5px;
+  padding-top: 0px;
 }
 
 .contact .info {
