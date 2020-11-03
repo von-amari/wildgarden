@@ -123,7 +123,7 @@
                             <div class="phone">
                                 <i class="icofont-phone"></i>
                                 <h4>Phone:</h4>
-                                <p>+1 (435) 562-5928</p>
+                                <p>+1 (801) 750-7115</p>
                             </div>
                         </div>
                     </div>
@@ -216,7 +216,7 @@
                                 370 E 600 N <br />
                                 Joseph, UT 84739 <br />
                                 United States <br /><br />
-                                <strong>Phone:</strong> (435) 562-5928 <br />
+                                <strong>Phone:</strong> (801) 750-7115 <br />
                                 <strong>Email:</strong> wildlandgardens2018@gmail.com <br />
                             </p>
                         </div>
