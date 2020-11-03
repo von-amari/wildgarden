@@ -784,8 +784,6 @@ section {
   }
 }
 
-
-
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
@@ -923,7 +921,14 @@ section {
 .img-fluid.home {
   border-radius: 50%;
 }
+
+.carousel.slide {
+  display: none;
+}
 .landscaping.card-title {
+  color: #c27933;
+}
+.member-content {
   color: #c27933;
 }
 div.landscaping.content-wrap {
@@ -1123,7 +1128,7 @@ div.landscaping.content-wrap {
   margin: 0 auto;
   text-align: center;
   display: block;
-  width: 10rem;
+  width: 13%;
 }
 
 .trainers .content .learn-more-btn:hover {
