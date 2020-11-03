@@ -188,7 +188,7 @@
                             </div>
                             <?php
                             if (isset($_POST['submit']) && !isset($name_error) && !isset($subject_error) && !isset($email_error) && !isset($message_error)) {
-                                $to = 'vonking1980@gmail.com'; // edit here
+                                $to = 'wildlandgardens2018@gmail.com'; // edit here
                                 $body = " Name: $name\n E-mail: $email\n Message:\n $message";
                                 // $headers = "From: " . $email;
                                 if (mail($to, $subject, $body)) {
